@@ -3,7 +3,7 @@ cd ~
 sudo apt-get update
 mkdir ~/Scratch
 cd ~/Scratch
-wget "https://downloads.scratch.mit.edu/desktop/Scratch%20Desktop%20Setup%203.9.0.exe"
+wget "https://github.com/WISEPLAT/Scratch-3.9-on-Linux/blob/master/Scratch%20Desktop%20Setup%203.9.0.exe"
 sudo apt-get install -y p7zip-full
 7z x Scratch\ Desktop\ Setup\ 3.9.0.exe
 cd \$PLUGINSDIR
