@@ -51,3 +51,90 @@ Password for 'https://USERNAME@github.com':
 Всего 3 (изменения 0), повторно использовано 0 (изменения 0)
 To https://github.com/WISEPLAT/Scratch-3.9-on-Linux.git
    c1c222e..bdfb4a9  master -> master
+
+
+
+
+
+sysadmin@ubuntu-desktop-20-04:~/11$ git clone https://github.com/WISEPLAT/Scratch-3.9-on-Linux.git
+Клонирование в «Scratch-3.9-on-Linux»…
+remote: Enumerating objects: 9, done.
+remote: Counting objects: 100% (9/9), done.
+remote: Compressing objects: 100% (8/8), done.
+remote: Total 9 (delta 0), reused 6 (delta 0), pack-reused 0
+Распаковка объектов: 100% (9/9), 2.71 KiB | 2.71 MiB/s, готово.
+sysadmin@ubuntu-desktop-20-04:~/11$ ls
+Scratch-3.9-on-Linux
+sysadmin@ubuntu-desktop-20-04:~/11$ mc
+
+sysadmin@ubuntu-desktop-20-04:~/11$ ls
+Scratch-3.9-on-Linux
+sysadmin@ubuntu-desktop-20-04:~/11$ cd Scratch-3.9-on-Linux/
+sysadmin@ubuntu-desktop-20-04:~/11/Scratch-3.9-on-Linux$ ls
+ how_to_put_iton_github.txt                      install_scratch_ok.sh  'Scratch Desktop Setup 3.9.0.exe'
+ install_scratch_ok_get_Scratch_from_Github.sh   README.md
+sysadmin@ubuntu-desktop-20-04:~/11/Scratch-3.9-on-Linux$ git config --global user.email "EMAIL"
+sysadmin@ubuntu-desktop-20-04:~/11/Scratch-3.9-on-Linux$ git config --global user.name "Oleg"
+sysadmin@ubuntu-desktop-20-04:~/11/Scratch-3.9-on-Linux$ ls
+ how_to_put_iton_github.txt                      install_scratch_ok.sh  'Scratch Desktop Setup 3.9.0.exe'
+ install_scratch_ok_get_Scratch_from_Github.sh   README.md
+sysadmin@ubuntu-desktop-20-04:~/11/Scratch-3.9-on-Linux$ git lfs install
+Updated git hooks.
+Git LFS initialized.
+sysadmin@ubuntu-desktop-20-04:~/11/Scratch-3.9-on-Linux$ ls -l
+итого 28
+-rw-rw-r-- 1 sysadmin sysadmin  3165 мая  2 10:00  how_to_put_iton_github.txt
+-rwxrwxr-x 1 sysadmin sysadmin  1110 мая  2 09:37  install_scratch_ok_get_Scratch_from_Github.sh
+-rwxrwxr-x 1 sysadmin sysadmin  1091 мая  2 09:34  install_scratch_ok.sh
+-rw-rw-r-- 1 sysadmin sysadmin   185 мая  2 10:00  README.md
+-rw-rw-r-- 1 sysadmin sysadmin 10240 мая  2 09:53 'Scratch Desktop Setup 3.9.0.exe'
+sysadmin@ubuntu-desktop-20-04:~/11/Scratch-3.9-on-Linux$ git lfs track "*.exe"
+Tracking "*.exe"
+sysadmin@ubuntu-desktop-20-04:~/11/Scratch-3.9-on-Linux$ ls -l
+итого 28
+-rw-rw-r-- 1 sysadmin sysadmin  3165 мая  2 10:00  how_to_put_iton_github.txt
+-rwxrwxr-x 1 sysadmin sysadmin  1110 мая  2 09:37  install_scratch_ok_get_Scratch_from_Github.sh
+-rwxrwxr-x 1 sysadmin sysadmin  1091 мая  2 09:34  install_scratch_ok.sh
+-rw-rw-r-- 1 sysadmin sysadmin   185 мая  2 10:00  README.md
+-rw-rw-r-- 1 sysadmin sysadmin 10240 мая  2 09:53 'Scratch Desktop Setup 3.9.0.exe'
+sysadmin@ubuntu-desktop-20-04:~/11/Scratch-3.9-on-Linux$ git add .gitattributes
+sysadmin@ubuntu-desktop-20-04:~/11/Scratch-3.9-on-Linux$ ls -l
+итого 28
+-rw-rw-r-- 1 sysadmin sysadmin  3165 мая  2 10:00  how_to_put_iton_github.txt
+-rwxrwxr-x 1 sysadmin sysadmin  1110 мая  2 09:37  install_scratch_ok_get_Scratch_from_Github.sh
+-rwxrwxr-x 1 sysadmin sysadmin  1091 мая  2 09:34  install_scratch_ok.sh
+-rw-rw-r-- 1 sysadmin sysadmin   185 мая  2 10:00  README.md
+-rw-rw-r-- 1 sysadmin sysadmin 10240 мая  2 09:53 'Scratch Desktop Setup 3.9.0.exe'
+sysadmin@ubuntu-desktop-20-04:~/11/Scratch-3.9-on-Linux$ ms
+ms: команда не найдена
+sysadmin@ubuntu-desktop-20-04:~/11/Scratch-3.9-on-Linux$ mc
+
+sysadmin@ubuntu-desktop-20-04:~/11/Scratch-3.9-on-Linux$ ls -l
+итого 28
+-rw-rw-r-- 1 sysadmin sysadmin  3165 мая  2 10:00  how_to_put_iton_github.txt
+-rwxrwxr-x 1 sysadmin sysadmin  1110 мая  2 09:37  install_scratch_ok_get_Scratch_from_Github.sh
+-rwxrwxr-x 1 sysadmin sysadmin  1091 мая  2 09:34  install_scratch_ok.sh
+-rw-rw-r-- 1 sysadmin sysadmin   185 мая  2 10:00  README.md
+-rw-rw-r-- 1 sysadmin sysadmin 10240 мая  2 09:53 'Scratch Desktop Setup 3.9.0.exe'
+sysadmin@ubuntu-desktop-20-04:~/11/Scratch-3.9-on-Linux$ git add 'Scratch Desktop Setup 3.9.0.exe' 
+sysadmin@ubuntu-desktop-20-04:~/11/Scratch-3.9-on-Linux$ git add install_scratch_ok.sh 
+sysadmin@ubuntu-desktop-20-04:~/11/Scratch-3.9-on-Linux$ git add install_scratch_ok_get_Scratch_from_Github.sh 
+sysadmin@ubuntu-desktop-20-04:~/11/Scratch-3.9-on-Linux$ git commit -m "added dist for Github, 2nd install script :) and Big File"
+[master b04b90a] added dist for Github, 2nd install script :) and Big File
+ 4 files changed, 41 insertions(+)
+ create mode 100644 .gitattributes
+ create mode 100644 Scratch Desktop Setup 3.9.0.exe
+ create mode 100755 install_scratch_ok_get_Scratch_from_Github.sh
+sysadmin@ubuntu-desktop-20-04:~/11/Scratch-3.9-on-Linux$ git push origin master
+Username for 'https://github.com': USERNAME
+Password for 'https://USERNAME@github.com': PASSWORD
+Uploading LFS objects: 100% (1/1), 10 KB | 0 B/s, done.                                                               
+Перечисление объектов: 8, готово.
+Подсчет объектов: 100% (8/8), готово.
+При сжатии изменений используется до 4 потоков
+Сжатие объектов: 100% (5/5), готово.
+Запись объектов: 100% (6/6), 806 bytes | 806.00 KiB/s, готово.
+Всего 6 (изменения 2), повторно использовано 0 (изменения 0)
+remote: Resolving deltas: 100% (2/2), completed with 1 local object.
+To https://github.com/WISEPLAT/Scratch-3.9-on-Linux.git
+   2948ab0..b04b90a  master -> master
