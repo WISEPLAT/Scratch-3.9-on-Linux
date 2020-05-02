@@ -1,0 +1,53 @@
+sadmin@ubuntu-desktop-20-04:~/Scratch_Script$ git clone "https://github.com/WISEPLAT/Scratch-3.9-on-Linux.git"
+Клонирование в «Scratch-3.9-on-Linux»…
+remote: Enumerating objects: 3, done.
+remote: Counting objects: 100% (3/3), done.
+remote: Compressing objects: 100% (2/2), done.
+remote: Total 3 (delta 0), reused 0 (delta 0), pack-reused 0
+Распаковка объектов: 100% (3/3), 715 bytes | 715.00 KiB/s, готово.
+sysadmin@ubuntu-desktop-20-04:~/Scratch_Script$ ls
+Scratch-3.9-on-Linux
+sysadmin@ubuntu-desktop-20-04:~/Scratch_Script$ cd Scratch-3.9-on-Linux/
+sysadmin@ubuntu-desktop-20-04:~/Scratch_Script/Scratch-3.9-on-Linux$ ls
+README.md
+sysadmin@ubuntu-desktop-20-04:~/Scratch_Script/Scratch-3.9-on-Linux$ cd ..
+sysadmin@ubuntu-desktop-20-04:~/Scratch_Script$ ls
+Scratch-3.9-on-Linux
+sysadmin@ubuntu-desktop-20-04:~/Scratch_Script$ cd ..
+sysadmin@ubuntu-desktop-20-04:~$ ls
+ AdobeAIRInstaller.bin   install_scratch_ok.sh   package-lock.json   snap        Изображения     Шаблоны
+ Видео       Музыка      node_modules            Scratch             Документы   Общедоступные
+ Scratch_Script      Загрузки   'Рабочий стол'
+sysadmin@ubuntu-desktop-20-04:~/Scratch_Script$ cd ..
+sysadmin@ubuntu-desktop-20-04:~$ ls
+sysadmin@ubuntu-desktop-20-04:~$ cp install_scratch_ok.sh Scratch_Script/
+sysadmin@ubuntu-desktop-20-04:~$ ls
+sysadmin@ubuntu-desktop-20-04:~$ cd Scratch_Script/
+sysadmin@ubuntu-desktop-20-04:~/Scratch_Script$ ls
+install_scratch_ok.sh  Scratch-3.9-on-Linux
+sysadmin@ubuntu-desktop-20-04:~/Scratch_Script$ mv install_scratch_ok.sh Scratch-3.9-on-Linux/
+sysadmin@ubuntu-desktop-20-04:~/Scratch_Script$ cd Scratch-3.9-on-Linux/
+sysadmin@ubuntu-desktop-20-04:~/Scratch_Script/Scratch-3.9-on-Linux$ ls
+install_scratch_ok.sh  README.md
+sysadmin@ubuntu-desktop-20-04:~/Scratch_Script/Scratch-3.9-on-Linux$ git push
+Username for 'https://github.com': USERNAME
+Password for 'https://USERNAME@github.com': PASSWORD
+Everything up-to-date
+sysadmin@ubuntu-desktop-20-04:~/Scratch_Script/Scratch-3.9-on-Linux$ ls
+install_scratch_ok.sh  README.md
+sysadmin@ubuntu-desktop-20-04:~/Scratch_Script/Scratch-3.9-on-Linux$ git add install_scratch_ok.sh 
+sysadmin@ubuntu-desktop-20-04:~/Scratch_Script/Scratch-3.9-on-Linux$ git commit -m "script v.1.0"
+[master bdfb4a9] script v.1.0
+ 1 file changed, 35 insertions(+)
+ create mode 100755 install_scratch_ok.sh
+sysadmin@ubuntu-desktop-20-04:~/Scratch_Script/Scratch-3.9-on-Linux$ git push
+Username for 'https://github.com': USERNAME
+Password for 'https://USERNAME@github.com': 
+Перечисление объектов: 4, готово.
+Подсчет объектов: 100% (4/4), готово.
+При сжатии изменений используется до 4 потоков
+Сжатие объектов: 100% (3/3), готово.
+Запись объектов: 100% (3/3), 838 bytes | 838.00 KiB/s, готово.
+Всего 3 (изменения 0), повторно использовано 0 (изменения 0)
+To https://github.com/WISEPLAT/Scratch-3.9-on-Linux.git
+   c1c222e..bdfb4a9  master -> master
